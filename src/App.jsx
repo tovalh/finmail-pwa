@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { setTokens, clearTokens, hasStoredSession, refreshAccessToken } from './lib/auth.js'
 import { login as apiLogin } from './lib/api.js'
 import LoginScreen from './components/LoginScreen.jsx'
@@ -58,6 +59,7 @@ export default function App() {
       ) : (
         <LoginScreen onLogin={handleLogin} error={loginError} loading={loginLoading} />
       )}
+      <Analytics />
     </ErrorBoundary>
   )
 }
