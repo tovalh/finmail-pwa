@@ -1,5 +1,7 @@
 # FinMail PWA
 
+**Demo:** [finmail.toval.dev](https://finmail.toval.dev) (datos de ejemplo, sin backend)
+
 App móvil para registrar gastos personales en pesos chilenos (CLP). Se conecta a un [backend Java/Spring](https://github.com/tovalh/finmail) que lee los correos del banco, guarda cada movimiento y le pide a Claude una categoría. En la app solo confirmas o corriges esa sugerencia.
 
 Se instala como PWA, muestra los últimos datos guardados cuando no hay conexión y permite que el "mes" empiece el día que quieras (útil si te pagan el 15).
